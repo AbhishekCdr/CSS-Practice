@@ -52,7 +52,12 @@
 
 // console.log(a);
 
-let a = 99;
-console.log(a);
-a = 90;
-console.log(a);
+// let a = 99;
+// console.log(a);
+// a = 90;
+// console.log(a);
+
+abc();
+const abc = () => {
+  console.log(Hello);
+};
