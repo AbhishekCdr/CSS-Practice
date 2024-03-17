@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-container {
+  background-color: black;
+  border-radius: 100px;
+}
+button {
+  padding: 10px 15px 10px 15px;
+  border-radius: 100px;
+  background-color: yellow;
+  font-size: large;
+  border: 2px solid black;
+  transition: all 0.3s ease-in;
+}
+
+button:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in;
+}

@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  height: 100vh;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dot-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.dot {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.dot:nth-child(even) {
+  background-color: rgb(78, 255, 47);
+  animation: evenLoading ease-in 1s infinite;
+}
+.dot:nth-child(odd) {
+  background-color: red;
+  animation: oddLoading ease-in 1s infinite;
+}
+@keyframes oddLoading {
+  0%,
+  100% {
+    translate: 0 50%;
+  }
+  25%,
+  75% {
+    translate: 0 0%;
+  }
+  50% {
+    translate: 0 -50%;
+  }
+}
+@keyframes evenLoading {
+  0%,
+  100% {
+    translate: 0 -50%;
+  }
+  25%,
+  75% {
+    translate: 0 0%;
+  }
+  50% {
+    translate: 0 50%;
+  }
+}
